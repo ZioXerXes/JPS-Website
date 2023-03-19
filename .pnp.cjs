@@ -31,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:75d91955a0588e64439a41ad9860c508e5677f86d4acf65030c10034565e8ef5cf91318c759962d7a22a248f8e5b917dd5b635d5df35dd3463c8ab63a0ca2203#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:75d91955a0588e64439a41ad9860c508e5677f86d4acf65030c10034565e8ef5cf91318c759962d7a22a248f8e5b917dd5b635d5df35dd3463c8ab63a0ca2203#npm:13.5.0"],\
+            ["bootstrap", "virtual:75d91955a0588e64439a41ad9860c508e5677f86d4acf65030c10034565e8ef5cf91318c759962d7a22a248f8e5b917dd5b635d5df35dd3463c8ab63a0ca2203#npm:5.2.3"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:75d91955a0588e64439a41ad9860c508e5677f86d4acf65030c10034565e8ef5cf91318c759962d7a22a248f8e5b917dd5b635d5df35dd3463c8ab63a0ca2203#npm:18.2.0"],\
             ["react-scripts", "virtual:75d91955a0588e64439a41ad9860c508e5677f86d4acf65030c10034565e8ef5cf91318c759962d7a22a248f8e5b917dd5b635d5df35dd3463c8ab63a0ca2203#npm:5.0.1"],\
@@ -6142,6 +6143,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["bootstrap", [\
+        ["npm:5.2.3", {\
+          "packageLocation": "./.yarn/cache/bootstrap-npm-5.2.3-7458283a23-0211805dec.zip/node_modules/bootstrap/",\
+          "packageDependencies": [\
+            ["bootstrap", "npm:5.2.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:75d91955a0588e64439a41ad9860c508e5677f86d4acf65030c10034565e8ef5cf91318c759962d7a22a248f8e5b917dd5b635d5df35dd3463c8ab63a0ca2203#npm:5.2.3", {\
+          "packageLocation": "./.yarn/__virtual__/bootstrap-virtual-32a0e7b303/0/cache/bootstrap-npm-5.2.3-7458283a23-0211805dec.zip/node_modules/bootstrap/",\
+          "packageDependencies": [\
+            ["bootstrap", "virtual:75d91955a0588e64439a41ad9860c508e5677f86d4acf65030c10034565e8ef5cf91318c759962d7a22a248f8e5b917dd5b635d5df35dd3463c8ab63a0ca2203#npm:5.2.3"],\
+            ["@popperjs/core", null],\
+            ["@types/popperjs__core", null]\
+          ],\
+          "packagePeers": [\
+            "@popperjs/core",\
+            "@types/popperjs__core"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["brace-expansion", [\
         ["npm:1.1.11", {\
           "packageLocation": "./.yarn/cache/brace-expansion-npm-1.1.11-fb95eb05ad-faf34a7bb0.zip/node_modules/brace-expansion/",\
@@ -8859,6 +8882,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:75d91955a0588e64439a41ad9860c508e5677f86d4acf65030c10034565e8ef5cf91318c759962d7a22a248f8e5b917dd5b635d5df35dd3463c8ab63a0ca2203#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:75d91955a0588e64439a41ad9860c508e5677f86d4acf65030c10034565e8ef5cf91318c759962d7a22a248f8e5b917dd5b635d5df35dd3463c8ab63a0ca2203#npm:13.5.0"],\
+            ["bootstrap", "virtual:75d91955a0588e64439a41ad9860c508e5677f86d4acf65030c10034565e8ef5cf91318c759962d7a22a248f8e5b917dd5b635d5df35dd3463c8ab63a0ca2203#npm:5.2.3"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:75d91955a0588e64439a41ad9860c508e5677f86d4acf65030c10034565e8ef5cf91318c759962d7a22a248f8e5b917dd5b635d5df35dd3463c8ab63a0ca2203#npm:18.2.0"],\
             ["react-scripts", "virtual:75d91955a0588e64439a41ad9860c508e5677f86d4acf65030c10034565e8ef5cf91318c759962d7a22a248f8e5b917dd5b635d5df35dd3463c8ab63a0ca2203#npm:5.0.1"],\
