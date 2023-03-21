@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import profilePic from "./profilepic.jpg";
 import './App.css';
+import Template from './Template.js';
 
 const NotFound = () => {
   return <h2>404 Not Found</h2>;
@@ -10,31 +11,12 @@ const NotFound = () => {
 const App = () => {
   return (
     <Router>
-    <nav className="navbar fixed-left navbar-expand-md navbar-light">
-      <a className="navbar-brand raleway" href="#">J.P.S. Portfolio</a> 
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
-      <div className="collapse navbar-collapse form-inline" id="navbarSupportedContent">
-        <ul className="navbar-nav ml-auto form-inline">
-          <li className="nav-item active raleway">
-            <a className="nav-link" href="#about-me">About Me</a>
-          </li>
-          <li className="nav-item active raleway">
-            <a className="nav-link" href="#social-media">Social Media</a>
-          </li>
-          <li className="nav-item active raleway">
-            <a className="nav-link" href="#projects">Projects</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Template>
     <div className="container">
       <div className="row main">
         <div className="col-7">
           <div>
-            <h1>John Paul Schmidt</h1>
+            <h1 className="text-center">John Paul Schmidt</h1>
             <h2 className="text-center">Writer / Coder</h2>
             <div className="button-box text-center" id="social-media">
               <button className="social-button button-left">
@@ -62,12 +44,7 @@ const App = () => {
       </div>
       <hr/>
     </div>
-    <div className="footer container">
-      <div className="row">
-        <div className="col-12">
-        </div>
-      </div>
-    </div>
+    </Template>
     </Router>
   );
 }
