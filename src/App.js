@@ -1,49 +1,87 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import profilePic from "./profilepic.jpg";
+import Projects from './Projects.js';
+import About from './About.js';
 import './App.css';
-import Template from './Template.js';
+//import Template from './Template.js';
 
 const NotFound = () => {
   return <h2>404 Not Found</h2>;
+}
+const Navbar = () => {
+  return (
+    <div>
+      <nav className="navbar fixed-left navbar-expand-md navbar-light">
+        <a className="navbar-brand raleway" href="#">J.P.S. Portfolio</a> 
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse form-inline" id="navbarSupportedContent">
+          <ul className="navbar-nav ml-auto form-inline">
+            <li className="nav-item active raleway">
+              <Link className="nav-link" to="/about/">About Me</Link>
+            </li>
+            <li className="nav-item active raleway">
+              <Link className="nav-link" to="/contact/">Contact</Link>
+            </li>
+            <li className="nav-item active raleway">
+              <Link className="nav-link" to="/projects/">Projects</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <Route path="/about/" exact component={About} />
+      <Route path="/projects/" component={Projects} />
+    </div>
+  );
+}
+
+/*const Sidebar = () => {
+  return (
+    <div className="d-none d-md-block col-md-3">
+      <div className="border border-primary py-4 px-3">
+        Sidebar
+      </div>
+    </div>
+  )
+}
+*/
+
+const Footer = () => {
+  return (
+    <div className="footer container">
+      <div className="row">
+        <div className="col-12">
+          John Paul Schmidt © 2023
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const Template = (props) => {
+  return (
+    <React.Fragment>
+      <Navbar />
+      <div className="container py-4">
+        <div className="row">
+          <div className="col-12 col-md-9">
+            {props.children}
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </React.Fragment>
+  )
 }
 
 const App = () => {
   return (
     <Router>
     <Template>
-    <div className="container">
-      <div className="row main">
-        <div className="col-7">
-          <div>
-            <h1 className="text-center">John Paul Schmidt</h1>
-            <h2 className="text-center">Writer / Coder</h2>
-            <div className="button-box text-center" id="social-media">
-              <button className="social-button button-left">
-                <a href="https://www.linkedin.com/in/john-paul-schmidt-b1306941" target="#">
-                  <div className="button-contents">
-                    <i className="fab fa-linkedin" id="icon"></i>
-                    <p className="button-label">LinkedIn</p>
-                  </div>
-                </a>
-              </button>
-              <button className="social-button button-right">
-                <a href="https://www.github.com/ZioXerXes" target="#">
-                  <div className="button-contents">
-                    <i className="fab fa-github" id="icon"></i>
-                    <p className="button-label">GitHub</p>
-                  </div>
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="col-5">
-          <img className="picture" src={profilePic} alt="profilePic" />
-        </div>
-      </div>
-      <hr/>
-    </div>
+    
     </Template>
     </Router>
   );
