@@ -1,10 +1,89 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: auto;
+}
+
+h1, h2, .social-button {
+  font-family: 'Raleway', sans-serif;
+}
+
+i {
+  display: inline;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-section {
+  margin-bottom: 50px;
+}
+
+.bio {
+  width: 50%;
+  text-align: center;
+}
+
+.button-box {
+  width: 100%;
+}
+
+.button-contents {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.button-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+.button-left {
+  margin-right: 15px;
+}
+
+.button-right {
+  margin-left: 15px;
+}
+
+.main {
+  margin-top: 10px;
+}
+
+.nameplate {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
 .navbar {
   background-color: #D6F4F7;
 }
 
-.raleway {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+.no-scroll {
+  max-width: 100%;
 }
 
 .picture {
@@ -12,12 +91,31 @@
   border: 1px solid black;
 }
 
-.main {
-  margin-top: 10px;
+.project-box {
+  padding: 10px;
+  border-top: 1px solid rgb(189, 187, 187);
+  text-align: center;
 }
 
-i {
-  display: inline;
+.project-box-2 {
+  padding: 10px;
+  border-bottom: 1px solid rgb(189, 187, 187);
+  border-top: 1px solid rgb(189, 187, 187);
+  text-align: center;
+}
+
+.project-thumb {
+}
+
+.project-title {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
 }
 
 .social-button {
@@ -32,70 +130,8 @@ i {
   margin-top: 10px;
 }
 
-#icon {
-  display: flex;
-  align-items: center;
-}
-
-.button-box {
-  width: 100%;
-}
-
-.button-left {
-  margin-right: 15px;
-}
-
-.button-right {
-  margin-left: 15px;
-}
-
-.button-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 5px;
-}
-
-.button-contents {
-  margin-bottom: 0;
-  display: flex;
-  justify-content: center;
-}
-
 .social-media {
   display: flex;
-}
-
-.project-box {
-  margin-top: 15px;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-p {
-  margin-bottom: 0;
-}
-
-.nameplate {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-
-button {
-  padding: auto;
-}
-
-h1, h2, .social-button {
-  font-family: 'Raleway', sans-serif;
 }
 
 .main {
@@ -107,45 +143,12 @@ h1, h2, .social-button {
   justify-content: center;
 }
 
-.project-title {
-  font-family: 'Raleway', sans-serif;
-  display: flex;
-  justify-content: center;
-}
-
-.project-1 {
-  border-right: 1px solid rgb(189, 187, 187);
-  border-bottom: 1px solid rgb(189, 187, 187);
-}
-
-.project-2 {
-  border-bottom: 1px solid rgb(189, 187, 187);
-}
-
-.project-3 {
-  border-right: 1px solid rgb(189, 187, 187);
-}
-
-.about-me {
-  display: flex;
-  justify-content: center;
-}
-
-.about-me-section {
-  margin-bottom: 50px;
-}
-
 .typewriter {
   width: 25%;
   height: auto;
 }
 
-.bio {
-  width: 50%;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-  color: black;
+#icon {
+  display: flex;
+  align-items: center;
 }

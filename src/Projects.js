@@ -1,39 +1,37 @@
 import mathGame from "./mathgamethumb.jpg";
 import toDoList from "./todothumb.jpg";
+import shoppingList from "./shoppinglistthumb.jpg";
 
 const Projects = () => {
   return (
-    <div className="row">
+    <div className="row no-scroll">
     <div className="col-12">
       <h2 className="portfolio-head" id="projects">Portfolio</h2>
     </div>
-    <div className="col-6 project-1">
-      <div className="project-box">
-        <a href="https://magnificent-douhua-78ac8a.netlify.app/">
-          <img src={mathGame} />
-        </a>
-        <p className="project-title">Math Arcade Game</p>
-      </div>
+    <div className="col-6 project-box">
+      <a href="https://magnificent-douhua-78ac8a.netlify.app/">
+        <img className="project-thumb" src={mathGame} />
+      </a>
+      <h4 className="project-title">Math Arcade Game</h4>
+      <p className="project-title">Javascript, HTML, CSS</p>
     </div>
-    <div className="col-6 project-2">
-      <div className="project-box">
-        <a href="https://subtle-otter-532d8a.netlify.app/">  
-          <img src={toDoList} />
-        </a>
-        <p className="project-title">To Do List</p>
-      </div>
+    <div className="col-6 project-box">
+      <a href="https://subtle-otter-532d8a.netlify.app/">  
+        <img className="project-thumb" src={toDoList} />
+      </a>
+      <h4 className="project-title">To Do List</h4>
     </div>
-    <div className="col-6 project-3">
-      <div className="project-box">
-        <img src="https://picsum.photos/300/200" />
-        <p className="project-title">Future Project</p>
-      </div>
+    <div className="col-6 project-box-2">
+      <a href="https://relaxed-cascaron-9042da.netlify.app/">
+        <img className="project-thumb" src={shoppingList} />
+      </a>
+      <h4 className="project-title">Shopping List</h4>
     </div>
-    <div className="col-6 project-4">
-      <div className="project-box">
-        <img src="https://picsum.photos/300/200" />
-        <p className="project-title">Future Project</p>
-      </div>
+    <div className="col-6 project-box-2">
+      <a href="https://relaxed-cascaron-9042da.netlify.app/">
+        <img className="project-thumb" src={shoppingList} />
+      </a>
+      <h4 className="project-title">This Website</h4>
     </div>
   </div>
   )
