@@ -2,9 +2,9 @@ import profilePic from "./profilepic.jpg";
 
 const About = () => {
   return (
-    <div className="container">
+    <div className="about-page container">
       <div className="row main">
-        <div className="col-7">
+        <div className="vertical-align col-6">
           <div>
             <h1 className="text-center">John Paul Schmidt</h1>
             <h2 className="text-center">Writer / Coder</h2>
@@ -28,7 +28,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="col-5">
+        <div className="col-6">
           <img className="picture" src={profilePic} alt="profilePic" />
         </div>
       </div>

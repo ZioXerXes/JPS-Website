@@ -87,7 +87,6 @@ p {
 }
 
 .picture {
-  max-width: 500px;
   border: 1px solid black;
 }
 
@@ -143,10 +142,21 @@ p {
   justify-content: center;
 }
 
+.title-card {
+  margin-left: 15px;
+}
+
 .typewriter {
   width: 25%;
   height: auto;
 }
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
 
 #icon {
   display: flex;

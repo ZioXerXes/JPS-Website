@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar fixed-left navbar-expand-md navbar-light">
-        <a className="navbar-brand raleway" href="#">J.P.S. Portfolio</a> 
+        <a className="navbar-brand raleway title-card" href="#">J.P.S. Portfolio</a> 
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse form-inline" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto form-inline">
             <li className="nav-item active raleway">
-              <Link className="nav-link" to="/about/">About Me</Link>
+              <Link className="nav-link" to="/">About Me</Link>
             </li>
             <li className="nav-item active raleway">
               <Link className="nav-link" to="/contact/">Contact</Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-      <Route path="/about/" exact component={About} />
+      <Route path="/" exact component={About} />
       <Route path="/projects/" component={Projects} />
     </div>
   );
@@ -53,7 +53,7 @@ const Footer = () => {
   return (
     <div className="footer container">
       <div className="row">
-        <div className="col-12">
+        <div className="footer-content col-12">
           John Paul Schmidt © 2023
         </div>
       </div>
@@ -65,13 +65,6 @@ const Template = (props) => {
   return (
     <React.Fragment>
       <Navbar />
-      <div className="container py-4">
-        <div className="row">
-          <div className="col-12 col-md-9">
-            {props.children}
-          </div>
-        </div>
-      </div>
       <Footer />
     </React.Fragment>
   )
