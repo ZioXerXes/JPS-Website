@@ -9,6 +9,7 @@ import './App.css';
 const NotFound = () => {
   return <h2>404 Not Found</h2>;
 }
+
 const Navbar = () => {
   return (
     <div>
@@ -24,10 +25,10 @@ const Navbar = () => {
               <Link className="nav-link" to="/">About Me</Link>
             </li>
             <li className="nav-item active raleway">
-              <Link className="nav-link" to="/contact/">Contact</Link>
+              <Link className="nav-link" to="/projects/">Projects</Link>
             </li>
             <li className="nav-item active raleway">
-              <Link className="nav-link" to="/projects/">Projects</Link>
+              <Link className="nav-link" to="/contact/">Contact</Link>
             </li>
           </ul>
         </div>

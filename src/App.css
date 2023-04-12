@@ -20,6 +20,10 @@ img {
   height: auto;
 }
 
+.picture {
+  max-width: 400px;
+}
+
 p {
   margin-bottom: 0;
 }
@@ -27,6 +31,10 @@ p {
 .about-me {
   display: flex;
   justify-content: center;
+}
+
+.about-page {
+  overflow: hidden;
 }
 
 .about-me-section {

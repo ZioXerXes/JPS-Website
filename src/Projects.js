@@ -1,6 +1,7 @@
 import mathGame from "./mathgamethumb.jpg";
 import toDoList from "./todothumb.jpg";
 import shoppingList from "./shoppinglistthumb.jpg";
+import blackJack from "./blackjackthumb.jpg";
 
 const Projects = () => {
   return (
@@ -13,7 +14,6 @@ const Projects = () => {
         <img className="project-thumb" src={mathGame} />
       </a>
       <h4 className="project-title">Math Arcade Game</h4>
-      <p className="project-title">Javascript, HTML, CSS</p>
     </div>
     <div className="col-6 project-box">
       <a href="https://subtle-otter-532d8a.netlify.app/">  
@@ -28,10 +28,10 @@ const Projects = () => {
       <h4 className="project-title">Shopping List</h4>
     </div>
     <div className="col-6 project-box-2">
-      <a href="https://relaxed-cascaron-9042da.netlify.app/">
-        <img className="project-thumb" src={shoppingList} />
+      <a href="https://blackjack.johnschmidt1.repl.co//">
+        <img className="project-thumb" src={blackJack} />
       </a>
-      <h4 className="project-title">This Website</h4>
+      <h4 className="project-title">Blackjack</h4>
     </div>
   </div>
   )
