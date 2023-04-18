@@ -28,6 +28,13 @@ p {
   margin-bottom: 0;
 }
 
+ul {
+  text-align: center;
+  list-style-position: inside;
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .about-me {
   display: flex;
   justify-content: center;
@@ -69,6 +76,10 @@ p {
 
 .button-right {
   margin-left: 15px;
+}
+
+.footer-content {
+  font-size: 12px;
 }
 
 .main {

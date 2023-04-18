@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Projects from './Projects.js';
 import About from './About.js';
+import Contact from './Contact.js';
 import './App.css';
 //import Template from './Template.js';
 
@@ -35,6 +36,7 @@ const Navbar = () => {
       </nav>
       <Route path="/" exact component={About} />
       <Route path="/projects/" component={Projects} />
+      <Route path="/contact/" component={Contact} />
     </div>
   );
 }
@@ -55,7 +57,7 @@ const Footer = () => {
     <div className="footer container">
       <div className="row">
         <div className="footer-content col-12">
-          John Paul Schmidt © 2023
+          Website designed by John Paul Schmidt © 2023
         </div>
       </div>
     </div>
