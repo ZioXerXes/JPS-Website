@@ -1,10 +1,6 @@
 a {
   text-decoration: none;
-  color: black;
-}
-
-button {
-  padding: auto;
+  color: #E68784;
 }
 
 h1, h2, .social-button {
@@ -53,12 +49,7 @@ ul {
   text-align: center;
 }
 
-.button-box {
-  width: 100%;
-}
-
 .button-contents {
-  margin-bottom: 0;
   display: flex;
   justify-content: center;
 }
@@ -67,15 +58,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 5px;
-}
-
-.button-left {
-  margin-right: 15px;
-}
-
-.button-right {
-  margin-left: 15px;
 }
 
 .footer-content {
@@ -98,7 +80,7 @@ ul {
 }
 
 .navbar {
-  background-color: #D6F4F7;
+  background-color: #84e3e6;
 }
 
 .no-scroll {
@@ -140,12 +122,11 @@ ul {
   border: 1px solid black;
   border-radius: 25px;
   display: inline;
-  align-items: center;
-  justify-content: center;
-  background-color: #D6F4F7;
-  width: 100px;
+  background-color: #84e3e6;
+  width: 120px;
   height: auto;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 .social-media {

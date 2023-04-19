@@ -12,6 +12,7 @@ const About = () => {
               <p className="raleway text-center">I am a journalist and programming student. Tools and languages I have studied so far include:</p>
               <ul className="raleway">
                 <li>JavaScript</li>
+                <li>Bootstrap</li>
                 <li>HTML</li>
                 <li>ReactJS</li>
                 <li>DOM</li>
