@@ -5,6 +5,8 @@ import Projects from './Projects.js';
 import About from './About.js';
 import Contact from './Contact.js';
 import './App.css';
+import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
+
 //import Template from './Template.js';
 
 const NotFound = () => {
@@ -14,24 +16,25 @@ const NotFound = () => {
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar fixed-left navbar-expand-md navbar-light">
-        <a className="navbar-brand raleway title-card" href="/">J.P.S. Portfolio</a> 
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse form-inline" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto form-inline">
-            <li className="nav-item active raleway">
-              <Link className="nav-link" to="/">About Me</Link>
-            </li>
-            <li className="nav-item active raleway">
-              <Link className="nav-link" to="/projects/">Projects</Link>
-            </li>
-            <li className="nav-item active raleway">
-              <Link className="nav-link" to="/contact/">Contact</Link>
-            </li>
-          </ul>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">John Paul Schmidt</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link active nav-page" aria-current="page" to="/">About Me</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link nav-page" to="/projects/">Projects</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link nav-page" to="/contact/">Contact</Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <Route path="/" exact component={About} />
